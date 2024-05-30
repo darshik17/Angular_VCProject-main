@@ -27,7 +27,7 @@
                     <div class="form-group">
                       <label class="col-form-label">PhoneNumber</label>
                       <input type="text" class="form-control" formControlName="phoneNumber" placeholder="evan" autofocus>
-                      <span class="text-danger mb-0" *ngIf="phoneNumber.invalid &&  (firstName.touched || formValid)">
+                      <span class="text-danger mb-0" *ngIf="phoneNumber.invalid &&  (phoneNumber.touched || formValid)">
                         Please Enter PhoneNumber
                       </span>
                     </div>
