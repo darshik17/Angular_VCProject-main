@@ -31,8 +31,8 @@
                  <td>{{item.skillName}}</td>
                  <td style="text-align: right;color:#14c506;" [ngStyle]="item.status == 'active' ? {'color': '#14c506'} : {'color': '#ff0000'}">{{item.status == 'active' ? 'Active' : 'In-Active'}}</td>
                  <td style="text-align: right;"></td>
-                 <button class="btnedit" routerLink="../editUser/{{item.skillId}}"> <i class="fa fa-edit "></i> </button>
-                 <button class="btndelete" (click)="showDeleteModel(item.skillId)"> <i class="fa fa-trash "></i> </button>
+                 <button class="btnedit" routerLink="../editUser/{{item.id}}"> <i class="fa fa-edit "></i> </button>
+                 <button class="btndelete" (click)="showDeleteModel(item.id)"> <i class="fa fa-trash "></i> </button>
                </tr>
                <tr *ngIf="result.length === 0">
                 <td colspan="6" style="text-align:center;width:100%;font-size:20px;color: red;"><b>No Data Found </b> </td>

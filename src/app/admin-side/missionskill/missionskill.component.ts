@@ -38,7 +38,7 @@ export class MissionskillComponent implements OnInit {
   }
 
   showDeleteModel(skillId: number){
-    this.  deleteSkillmodal.show();
+    this.deleteSkillmodal.show();
     this.skillId = skillId;
   }
 
