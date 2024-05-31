@@ -39,11 +39,11 @@ export class MissionthemeComponent implements OnInit {
       (err) => this.toast.error({ summary: err.message, duration: 3000 })
     );
   }
+ 
   showDeleteModel(themeId: number){
     this.deleteThemeModal.show();
-    this.themeId = this.themeId;
+    this.themeId = themeId;
   }
- 
   CloseRemoveMissionThemeModal(){
     this.deleteThemeModal.hide();
   }
