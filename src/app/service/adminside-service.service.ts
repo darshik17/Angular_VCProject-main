@@ -89,12 +89,12 @@ export class AdminsideServiceService {
   //Mission Application
   MissionApplicationList(): Observable<MissionApplication[]> {
     return this.http.get<MissionApplication[]>(
-      `${this.apiUrl}/Mission/MissionApplicationList`
+      `${this.apiUrl}/AdminUser/MissionApplicationList`
     );
   }
 
   MissionApplicationDelete(data: MissionApplication){
-    return this.http.post(`${this.apiUrl}/Mission/MissionApplicationDelete`, data);
+    return this.http.post(`${this.apiUrl}/Mission/DeleteMissionApplication`, data);
   }
 
   MissionApplicationApprove(data: MissionApplication){
